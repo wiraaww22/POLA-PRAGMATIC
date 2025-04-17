@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pola Pragmatic</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      background: #f9f9f9;
+    }
+    input, button {
+      font-size: 16px;
+      padding: 10px;
+      width: 100%;
+      margin-top: 10px;
+    }
+    #output {
+      margin-top: 20px;
+      white-space: pre-wrap;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Pola Pragmatic</h2>
+  <input type="text" id="keyword" placeholder="Ketik POLA PRAGMATIC..." />
+  <button onclick="cekPola()">Tampilkan Pola</button>
+
+  <div id="output"></div>
+
+  <script>
+    function cekPola() {
+      const input = document.getElementById("keyword").value.trim().toUpperCase();
+      const output = document.getElementById("output");
+
+      if (input === "POLA PRAGMATIC") {
+        output.textContent = `🍁 10 MANUAL BET 400  ❌ ❌ ✅ |DC ON
+🍁 20 TURBO BET 400  ✅ ❌ ✅ |DC OFF
+🍁 30 SPIN CEPAT BET 400   ❌ ✅ ✅ |DC ON`;
+      } else {
+        output.textContent = "Kata kunci tidak dikenali. Coba lagi.";
+      }
+    }
+  </script>
+</body>
+</html>
